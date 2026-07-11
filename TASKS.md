@@ -63,7 +63,8 @@
 - [x] Reduce vertical spacing between sections and remove redundant owner section.
 - [x] De-box small-content sections (categories, credibility, location) into lighter section titles.
 - [x] Replace internal redesign-note copy across home and supporting pages with customer-facing copy.
-- [ ] Owner to supply additional professional photography (only 3 real treatment photos available; featured grid limited to 3).
+- [x] Source a free-license (Pexels) body-treatment photo for Ondas Rusas to remove the duplicated image; featured grid back to 4 unique photos. See `public/images/IMAGE_CREDITS.md`.
+- [ ] Owner may still replace stock photography with real in-clinic photos when available.
 
 ## Phase 5 — QA and launch
 

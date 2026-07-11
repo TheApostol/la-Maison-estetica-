@@ -70,6 +70,24 @@ export const featuredTreatments: Treatment[] = [
     },
     ctaHref: `${whatsapp}?text=%C2%A1Hola%20La%20Maison!%20Quiero%20un%20turno%20para%20VelaSlim%20Plus.%20%C2%BFTienen%20disponibilidad%3F`,
   },
+  {
+    slug: "ondas-rusas",
+    name: "Ondas Rusas",
+    category: "Corporal modelador",
+    label: "Pack de sesiones",
+    summary:
+      "Gimnasia pasiva que tonifica y fortalece la musculatura mediante electroestimulación, en un trabajo progresivo por sesiones.",
+    highlights: [
+      "Gimnasia pasiva",
+      "Tonificación muscular",
+      "Trabajo progresivo por sesiones",
+    ],
+    image: {
+      src: "/images/treatments/ondas-rusas.webp",
+      alt: "Sesión de tratamiento corporal modelador en La Maison",
+    },
+    ctaHref: `${whatsapp}?text=%C2%A1Hola%20La%20Maison!%20Quiero%20un%20turno%20para%20Ondas%20Rusas.%20%C2%BFTienen%20disponibilidad%3F`,
+  },
 ] as const;
 
 export const treatmentCategories = [

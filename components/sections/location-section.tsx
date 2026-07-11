@@ -37,15 +37,63 @@ export function LocationSection() {
           <div>
             <span className="eyebrow">Ubicación y contacto</span>
             <h2 className="section-title mt-5 text-balance">
-              Todo lo necesario para coordinar sin dar vueltas.
+              Todo listo para que pasar de mirar a escribir sea natural.
             </h2>
             <p className="prose-copy mt-4">
-              Dejamos la información esencial al alcance: dirección, horarios,
-              Instagram y el acceso directo al canal principal de reserva.
+              En vez de esconder la información útil dentro de cajas sueltas, la
+              dejamos concentrada en accesos directos y más tentadores de tocar.
             </p>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
+            <TrackedLink
+              href={siteConfig.whatsappUrl}
+              eventName="whatsapp_click"
+              eventPayload={{ placement: "location_primary" }}
+              className="card-surface p-6 hover:-translate-y-1 hover:border-wa/40"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+                Hablar por WhatsApp
+              </p>
+              <p className="mt-3 text-2xl font-semibold text-foreground">
+                Reservá una evaluación
+              </p>
+              <p className="mt-3 text-sm leading-6 text-muted-foreground">
+                El canal más directo para consultar disponibilidad y coordinar tu turno.
+              </p>
+            </TrackedLink>
+            <TrackedLink
+              href={siteConfig.mapUrl}
+              eventName="map_click"
+              eventPayload={{ placement: "location_map" }}
+              className="card-surface p-6 hover:-translate-y-1 hover:border-brand/40"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+                Palermo Soho, CABA
+              </p>
+              <p className="mt-3 text-2xl font-semibold text-foreground">
+                Abrir ubicación
+              </p>
+              <p className="mt-3 text-sm leading-6 text-muted-foreground">
+                {siteConfig.address.street}. Ver mapa, barrio y punto exacto.
+              </p>
+            </TrackedLink>
+            <TrackedLink
+              href={siteConfig.instagramUrl}
+              eventName="instagram_click"
+              eventPayload={{ placement: "location_instagram" }}
+              className="card-surface p-6 hover:-translate-y-1 hover:border-brand/40"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+                Instagram
+              </p>
+              <p className="mt-3 text-2xl font-semibold text-foreground">
+                Ver el perfil
+              </p>
+              <p className="mt-3 text-sm leading-6 text-muted-foreground">
+                Un acceso directo al canal social público de la marca.
+              </p>
+            </TrackedLink>
             <div className="card-surface p-6">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Horarios
@@ -56,48 +104,16 @@ export function LocationSection() {
                 {siteConfig.hours[1]}
               </p>
             </div>
-            <div className="card-surface p-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
-                Canales
-              </p>
-              <div className="mt-3 flex flex-col gap-3">
-                <TrackedLink
-                  href={siteConfig.whatsappUrl}
-                  eventName="whatsapp_click"
-                  eventPayload={{ placement: "location" }}
-                  className="font-semibold text-foreground hover:text-brand"
-                >
-                  WhatsApp
-                </TrackedLink>
-                <TrackedLink
-                  href={siteConfig.instagramUrl}
-                  eventName="instagram_click"
-                  eventPayload={{ placement: "location" }}
-                  className="font-semibold text-foreground hover:text-brand"
-                >
-                  Instagram
-                </TrackedLink>
-                <TrackedLink
-                  href={siteConfig.mapUrl}
-                  eventName="map_click"
-                  eventPayload={{ placement: "location" }}
-                  className="font-semibold text-foreground hover:text-brand"
-                >
-                  Abrir mapa
-                </TrackedLink>
-              </div>
-            </div>
           </div>
 
           <div className="card-surface p-6 sm:p-8">
             <p className="text-sm font-medium uppercase tracking-[0.18em] text-brand">
-              Formulario
+              Próximo paso
             </p>
             <p className="mt-4 text-base leading-7 text-muted-foreground">
-              El destino final del formulario todavía no fue confirmado por la
-              marca. Para no crear una experiencia engañosa, esta versión deja el
-              canal de contacto activo en WhatsApp y prepara la estructura para
-              habilitar el envío cuando se defina el destino.
+              Para esta etapa, el sitio prioriza una acción que ya funciona y no
+              genera dudas: contacto directo por WhatsApp. Cuando la marca confirme
+              el destino del formulario, se puede sumar sin romper este recorrido.
             </p>
             <TrackedLink
               href={siteConfig.whatsappUrl}

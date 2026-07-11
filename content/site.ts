@@ -21,58 +21,101 @@ export const siteConfig = {
     postalCode: "C1425",
   },
   hours: ["Lunes a Viernes: 10:00 – 20:00", "Sábados: 10:00 – 14:00"],
-  heroHighlights: [
-    "Estética facial y corporal",
-    "Palermo Soho, CABA",
-    "Turnos por WhatsApp",
-  ],
 } as const;
+
+export const heroActions = [
+  {
+    title: "Estética facial y corporal",
+    description: "Ver tratamientos destacados y categorías",
+    href: "/tratamientos",
+    eventName: "cta_click",
+    eventPayload: { placement: "hero_chip_treatments" },
+  },
+  {
+    title: "Palermo Soho, CABA",
+    description: "Abrir ubicación y datos de contacto",
+    href: "https://www.google.com/maps/search/?api=1&query=Gurruchaga+1341+Palermo+Soho+CABA",
+    eventName: "map_click",
+    eventPayload: { placement: "hero_chip_map" },
+  },
+  {
+    title: "Turnos por WhatsApp",
+    description: "Escribir ahora y coordinar en minutos",
+    href: whatsappBase,
+    eventName: "whatsapp_click",
+    eventPayload: { placement: "hero_chip_whatsapp" },
+  },
+] as const;
 
 export const valuePillars = [
   {
-    title: "Atención personalizada",
+    title: "Reserva simple",
     description:
-      "El sitio público insiste en el acompañamiento cercano y en la propuesta adaptada a cada caso.",
+      "Un camino directo a WhatsApp, sin formularios eternos ni pasos innecesarios.",
+    href: whatsappBase,
+    eventName: "whatsapp_click",
+    eventPayload: { placement: "value_strip_whatsapp" },
   },
   {
-    title: "Palermo Soho",
+    title: "Ubicación clara",
     description:
-      "La dirección y el barrio aparecen como referencia principal de ubicación en toda la experiencia.",
+      "Dirección, horarios y barrio visibles desde el primer scroll.",
+    href: "https://www.google.com/maps/search/?api=1&query=Gurruchaga+1341+Palermo+Soho+CABA",
+    eventName: "map_click",
+    eventPayload: { placement: "value_strip_map" },
   },
   {
-    title: "Reserva directa",
+    title: "Selección guiada",
     description:
-      "WhatsApp se mantiene como canal principal porque es el único flujo de contacto público claramente verificado.",
+      "Tratamientos ordenados para entender rápido qué puede interesarte.",
+    href: "/tratamientos",
+    eventName: "cta_click",
+    eventPayload: { placement: "value_strip_treatments" },
   },
   {
-    title: "Oferta ordenada",
+    title: "Atención cercana",
     description:
-      "La nueva arquitectura separa categorías, tratamientos y preguntas frecuentes para facilitar la lectura.",
+      "Una experiencia pensada para resolver dudas y acompañar la reserva con claridad.",
+    href: whatsappBase,
+    eventName: "whatsapp_click",
+    eventPayload: { placement: "value_strip_owner" },
   },
 ] as const;
 
 export const storyPoints = [
   {
-    title: "Facial y corporal",
+    title: "Más deseo, menos fricción",
     description:
-      "La oferta visible combina tratamientos faciales y corporales en un mismo recorrido, sin mezclar todo en una sola lista larga.",
+      "La página ahora empuja mejor hacia la consulta, con mensajes más cortos, CTAs más visibles y menos bloques compitiendo entre sí.",
   },
   {
-    title: "Consulta guiada",
+    title: "Servicios mejor presentados",
     description:
-      "La lógica del nuevo contenido prioriza diagnóstico, propuesta personalizada y seguimiento antes que métricas dudosas.",
+      "Lo facial, corporal y complementario queda agrupado con más intención comercial y lectura más rápida.",
   },
   {
-    title: "Horarios y dirección",
+    title: "Ubicación que convierte",
     description:
-      "La información operativa queda más cerca de las decisiones reales: dónde está, cuándo abre y cómo reservar.",
+      "La ubicación deja de sentirse como un bloque aparte y pasa a ser parte natural del recorrido de contacto.",
   },
   {
-    title: "Sin secciones demo",
+    title: "Contenido más confiable",
     description:
-      "Los testimonios de muestra, los resultados ilustrativos y los contadores inconsistentes se eliminan del flujo principal.",
+      "Se mantienen solo señales públicas verificables y se elimina lo que distraía o restaba credibilidad.",
   },
 ] as const;
+
+export const ownerSection = {
+  eyebrow: "Atención cercana",
+  title: "Un cierre más humano para reforzar confianza antes de escribir.",
+  description:
+    "En lugar de usar la imagen principal al comienzo, la movimos al final para que funcione como respaldo de cercanía y atención directa en el momento de decidir la consulta.",
+  points: [
+    "Atención personalizada desde el primer mensaje.",
+    "Seguimiento directo durante la coordinación del turno.",
+    "Una presencia más cálida al final del recorrido comercial.",
+  ],
+} as const;
 
 export const processSteps = [
   {

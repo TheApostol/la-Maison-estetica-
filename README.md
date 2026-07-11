@@ -28,11 +28,39 @@ El sitio de referencia se utilizará únicamente para relevar contenido, estruct
 
 - [x] Repositorio inicializado
 - [x] Dirección estratégica definida
-- [ ] Inventario completo de textos y activos
-- [ ] Scaffold Next.js
-- [ ] Implementación UI
-- [ ] QA responsive y accesibilidad
-- [ ] Integraciones y deploy
+- [x] Inventario completo de textos y activos
+- [x] Scaffold Next.js
+- [x] Implementación UI
+- [x] QA responsive y accesibilidad básica
+- [ ] Integraciones finales y deploy
+
+## Implementación actual
+
+- Next.js App Router con TypeScript estricto, Tailwind CSS, ESLint y Prettier.
+- Home premium/editorial reconstruida desde cero con foco en Palermo Soho, WhatsApp y claridad de servicios.
+- Páginas de apoyo: `tratamientos`, `tratamientos/[slug]`, `nosotros`, `contacto`, `privacidad`, `terminos`.
+- SEO base con metadata, `robots.ts` y `sitemap.ts`.
+- Hooks de analítica listos para GA4 y Meta Pixel vía variables de entorno.
+
+## Contenido utilizado y omitido
+
+Se usó únicamente contenido público verificable del sitio de referencia: nombre de marca, ubicación, horarios, WhatsApp, Instagram, estructura de servicios y nombres de tratamientos visibles.
+
+Se omitieron deliberadamente:
+
+- métricas inconsistentes;
+- testimonios marcados como demo;
+- antes/después e imágenes de resultados;
+- claims profesionales o médicos no suficientemente validados;
+- precios/promociones evergreen no confirmadas;
+- un formulario funcional sin destino aprobado.
+
+## Pendientes del owner
+
+- confirmar destino real del formulario;
+- validar qué claims profesionales pueden publicarse;
+- confirmar si deben volver promociones, medios de pago o una sección de resultados;
+- revisar `docs/CONTENT_GAPS.md` antes de deploy productivo.
 
 ## Regla central
 

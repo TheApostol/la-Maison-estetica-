@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f4ef;
+  --surface: #efe9e2;
+  --surface-strong: #e3dad0;
+  --foreground: #24211f;
+  --muted-foreground: #665f59;
+  --border: #d8cec3;
+  --white: #ffffff;
+  --brand: #76565a;
+  --brand-hover: #62464a;
+  --brand-soft: #e7dadc;
+  --taupe: #917c70;
+  --brass: #a98a5c;
+  --wa: #25d366;
+  --wa-hover: #1fa255;
+  --shadow-soft: 0 20px 60px -36px rgba(36, 33, 31, 0.38);
+  --shadow-line: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+  --radius-xl: 1.75rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-brand-soft: var(--brand-soft);
+  --color-taupe: var(--taupe);
+  --color-brass: var(--brass);
+  --color-wa: var(--wa);
+  --color-wa-hover: var(--wa-hover);
+  --color-white: var(--white);
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background:
+    radial-gradient(circle at top left, rgba(169, 138, 92, 0.12), transparent 28%),
+    linear-gradient(180deg, #fbf8f3 0%, var(--background) 32%, #f2ece5 100%);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  line-height: 1.6;
+}
+
+a,
+button,
+summary,
+input,
+textarea {
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--brand) 82%, white 18%);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--brand-soft) 70%, white 30%);
+  color: var(--foreground);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.section-shell {
+  @apply mx-auto max-w-7xl px-5 sm:px-6 lg:px-10;
+}
+
+.section-gap {
+  @apply py-16 sm:py-20 lg:py-28;
+}
+
+.eyebrow {
+  @apply inline-flex items-center gap-2 rounded-full border border-border/80 bg-white/75 px-4 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-brand;
+  box-shadow: var(--shadow-line);
+}
+
+.display-title {
+  @apply font-display text-5xl leading-none tracking-[-0.03em] sm:text-6xl lg:text-7xl;
+}
+
+.section-title {
+  @apply font-display text-4xl leading-tight tracking-[-0.03em] sm:text-5xl;
+}
+
+.card-surface {
+  @apply rounded-[var(--radius-xl)] border border-border/85 bg-white/80;
+  box-shadow: var(--shadow-soft);
+}
+
+.editorial-grid {
+  background-image:
+    linear-gradient(rgba(36, 33, 31, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(36, 33, 31, 0.04) 1px, transparent 1px);
+  background-position: center;
+  background-size: 72px 72px;
+}
+
+.prose-copy {
+  @apply text-base leading-7 text-muted-foreground sm:text-lg;
+}
+
+.divider-line {
+  @apply h-px w-full bg-gradient-to-r from-transparent via-brass/50 to-transparent;
+}

@@ -12,29 +12,29 @@ export function TreatmentCategoriesSection() {
           </h2>
         </div>
 
-        <div className="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2">
           {treatmentCategories.map((category) => (
-            <div
+            <article
               key={category.name}
-              className="border-t border-border pt-5"
+              className="card-surface card-interactive border-brand/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(243,220,230,0.22))] p-6 sm:p-7"
             >
-              <h3 className="font-display text-2xl leading-none text-foreground">
+              <h3 className="font-display text-3xl leading-none text-brand">
                 {category.name}
               </h3>
               <p className="mt-3 text-sm leading-6 text-muted-foreground">
                 {category.summary}
               </p>
-              <ul className="mt-4 flex flex-wrap gap-2">
+              <ul className="mt-5 flex flex-wrap gap-2">
                 {category.items.map((item) => (
                   <li
                     key={item}
-                    className="rounded-full border border-border/80 bg-white/60 px-3 py-1.5 text-xs text-foreground"
+                    className="rounded-full border border-brand/15 bg-white/70 px-3 py-1.5 text-xs font-medium text-foreground"
                   >
                     {item}
                   </li>
                 ))}
               </ul>
-            </div>
+            </article>
           ))}
         </div>
 

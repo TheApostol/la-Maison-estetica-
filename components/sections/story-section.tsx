@@ -16,7 +16,7 @@ export function StorySection() {
         </div>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           {storyPoints.map((point) => (
-            <div key={point.title} className="card-surface p-6">
+            <div key={point.title} className="card-surface card-interactive p-6">
                 <h3 className="text-lg font-semibold text-foreground">{point.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-muted-foreground">
                   {point.description}

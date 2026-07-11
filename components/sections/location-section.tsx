@@ -22,7 +22,7 @@ export function LocationSection() {
             href={siteConfig.whatsappUrl}
             eventName="whatsapp_click"
             eventPayload={{ placement: "location_primary" }}
-            className="card-surface border-brand/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.9),rgba(243,220,230,0.3))] p-6 transition duration-300 hover:-translate-y-1 hover:border-brand/30"
+            className="card-surface border-brand/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.9),rgba(243,220,230,0.3))] p-6 card-interactive"
           >
             <p className="section-eyebrow">WhatsApp</p>
             <p className="mt-3 text-xl font-semibold text-foreground">
@@ -37,7 +37,7 @@ export function LocationSection() {
             href={siteConfig.mapUrl}
             eventName="map_click"
             eventPayload={{ placement: "location_map" }}
-            className="card-surface border-brand/10 bg-white/80 p-6 transition duration-300 hover:-translate-y-1 hover:border-brand/30"
+            className="card-surface border-brand/10 bg-white/80 p-6 card-interactive"
           >
             <p className="section-eyebrow">Cómo llegar</p>
             <p className="mt-3 text-xl font-semibold text-foreground">
@@ -52,7 +52,7 @@ export function LocationSection() {
             href={siteConfig.instagramUrl}
             eventName="instagram_click"
             eventPayload={{ placement: "location_instagram" }}
-            className="card-surface border-brand/10 bg-white/80 p-6 transition duration-300 hover:-translate-y-1 hover:border-brand/30"
+            className="card-surface border-brand/10 bg-white/80 p-6 card-interactive"
           >
             <p className="section-eyebrow">Instagram</p>
             <p className="mt-3 text-xl font-semibold text-foreground">

@@ -65,8 +65,8 @@ export function HeroSection() {
           <div className="card-surface relative overflow-hidden p-3">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[1.4rem]">
               <Image
-                src="/images/team/cosmetologa.webp"
-                alt="Clienta de La Maison Estética tras su tratamiento"
+                src="/images/hero/facial.webp"
+                alt="Profesional de La Maison realizando un tratamiento facial"
                 fill
                 priority
                 sizes="(min-width: 1024px) 42vw, 100vw"

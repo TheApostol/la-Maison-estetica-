@@ -32,7 +32,7 @@ export function FeaturedTreatments() {
           {featuredTreatments.map((treatment) => (
             <article
               key={treatment.slug}
-              className="card-surface overflow-hidden lg:grid lg:grid-cols-[0.95fr_1.05fr]"
+              className="card-surface card-interactive overflow-hidden lg:grid lg:grid-cols-[0.95fr_1.05fr]"
             >
               <div className="relative min-h-72 bg-surface">
                 <Image

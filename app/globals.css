@@ -114,6 +114,16 @@ textarea {
   box-shadow: var(--shadow-soft);
 }
 
+.card-interactive {
+  @apply transition duration-300;
+}
+
+.card-interactive:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand-hover);
+  box-shadow: 0 26px 52px -30px rgba(140, 39, 83, 0.55);
+}
+
 .editorial-grid {
   background-image:
     linear-gradient(rgba(42, 35, 32, 0.03) 1px, transparent 1px),

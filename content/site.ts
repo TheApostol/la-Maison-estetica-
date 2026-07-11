@@ -63,6 +63,18 @@ export const credibility = {
   ],
 } as const;
 
+export const ownerSection = {
+  eyebrow: "Atención cercana",
+  title: "Detrás de cada tratamiento, una atención genuinamente personal.",
+  description:
+    "Te acompañamos desde el primer mensaje hasta el seguimiento de cada sesión, con un plan pensado para vos y una experiencia cálida de principio a fin.",
+  points: [
+    "Atención personalizada desde el primer mensaje.",
+    "Seguimiento directo durante todo el tratamiento.",
+    "Una experiencia cálida y profesional en Palermo Soho.",
+  ],
+} as const;
+
 export const storyPoints = [
   {
     title: "Atención personalizada",

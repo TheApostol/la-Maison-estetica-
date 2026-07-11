@@ -13,7 +13,7 @@ export function ProcessSection() {
 
         <ol className="mt-10 grid gap-5 lg:grid-cols-4">
           {processSteps.map((step, index) => (
-            <li key={step.title} className="card-surface p-6">
+            <li key={step.title} className="card-surface card-interactive p-6">
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand">
                 Paso {index + 1}
               </p>

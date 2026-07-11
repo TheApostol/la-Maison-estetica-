@@ -1,22 +1,31 @@
 import Image from "next/image";
-import { heroActions, siteConfig } from "@/content/site";
+import { hero, heroStats, siteConfig } from "@/content/site";
 import { TrackedLink } from "@/components/ui/tracked-link";
 
 export function HeroSection() {
   return (
     <section className="editorial-grid overflow-hidden">
-      <div className="section-shell section-gap grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
+      <div className="section-shell section-gap grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div className="relative z-10">
-          <span className="eyebrow">Tratamientos estéticos en Palermo Soho</span>
+          <span className="eyebrow">{hero.eyebrow}</span>
           <h1 className="display-title mt-6 max-w-3xl text-balance">
-            Una experiencia más clara, cálida y profesional para reservar tu
-            próximo turno.
+            {hero.titleLead}{" "}
+            <em className="italic text-brand">{hero.titleEmphasis}</em>
           </h1>
-          <p className="prose-copy mt-6 max-w-2xl">
-            Tratamientos estéticos en Palermo Soho, con una presentación más
-            elegante, más clara y mucho más enfocada en convertir la visita en una
-            consulta real.
-          </p>
+          <p className="prose-copy mt-6 max-w-2xl">{hero.description}</p>
+
+          <ul className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-semibold uppercase tracking-[0.18em] text-taupe">
+            {hero.treatments.map((item, index) => (
+              <li key={item} className="flex items-center gap-3">
+                {index > 0 ? (
+                  <span aria-hidden="true" className="text-brand/50">
+                    ·
+                  </span>
+                ) : null}
+                {item}
+              </li>
+            ))}
+          </ul>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <TrackedLink
@@ -25,7 +34,7 @@ export function HeroSection() {
               eventPayload={{ placement: "hero" }}
               className="inline-flex justify-center rounded-full bg-brand px-6 py-3.5 font-semibold text-white hover:bg-brand-hover"
             >
-              Reservar una evaluación
+              Reservar turno
             </TrackedLink>
             <TrackedLink
               href={siteConfig.whatsappUrl}
@@ -37,63 +46,48 @@ export function HeroSection() {
             </TrackedLink>
           </div>
 
-          <div className="mt-8 grid gap-3 sm:grid-cols-3">
-            {heroActions.map((item) => (
-              <TrackedLink
-                key={item.title}
-                href={item.href}
-                eventName={item.eventName}
-                eventPayload={item.eventPayload}
-                className="rounded-[1.4rem] border border-brand/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.84),rgba(246,213,231,0.24))] px-4 py-4 text-left shadow-[var(--shadow-soft)] transition duration-300 hover:-translate-y-1 hover:border-brand/40 hover:bg-[linear-gradient(180deg,rgba(255,255,255,0.95),rgba(246,213,231,0.4))]"
-              >
-                <p className="text-sm font-semibold text-brand">{item.title}</p>
-                <p className="mt-2 text-xs leading-5 text-muted-foreground">
-                  {item.description}
-                </p>
-              </TrackedLink>
+          <dl className="mt-10 grid max-w-lg grid-cols-3 gap-4">
+            {heroStats.map((stat) => (
+              <div key={stat.label} className="border-l border-brand/20 pl-4">
+                <dt className="font-display text-3xl leading-none text-brand sm:text-4xl">
+                  {stat.value}
+                </dt>
+                <dd className="mt-2 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                  {stat.label}
+                </dd>
+              </div>
             ))}
-          </div>
+          </dl>
         </div>
 
         <div className="relative">
-          <div className="absolute inset-x-[10%] top-[10%] h-40 rounded-full bg-[radial-gradient(circle,rgba(193,23,122,0.36),transparent_68%)] blur-3xl sm:h-52" />
-          <div className="absolute -right-8 top-8 h-24 w-24 rounded-full border border-brand/20 bg-brand-soft/50 blur-[1px]" />
-          <div className="grid gap-4">
-            <div className="card-surface overflow-hidden p-3">
-              <div className="relative aspect-[5/4] overflow-hidden rounded-[1.4rem]">
-                <Image
-                  src="/images/treatments/liporganic.webp"
-                  alt="Tratamiento corporal destacado en La Maison"
-                  fill
-                  priority
-                  sizes="(min-width: 1024px) 42vw, 100vw"
-                  className="object-cover"
-                />
-              </div>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="card-surface overflow-hidden p-3">
-                <div className="relative aspect-[1/1] overflow-hidden rounded-[1.2rem]">
-                  <Image
-                    src="/images/treatments/ultracavitacion.webp"
-                    alt="Tratamiento de ultracavitación en La Maison"
-                    fill
-                    sizes="(min-width: 1024px) 20vw, 50vw"
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-              <div className="rounded-[2rem] border border-brand/20 bg-[linear-gradient(145deg,#c1177a,#d84c9f)] px-6 py-6 text-white shadow-[0_28px_50px_-28px_rgba(193,23,122,0.95)]">
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/80">
-                  Palermo Soho
+          <div className="absolute -right-6 top-6 h-24 w-24 rounded-full border border-brand/15 bg-brand-soft/40 blur-[1px]" />
+          <div className="card-surface relative overflow-hidden p-3">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[1.4rem]">
+              <Image
+                src="/images/team/cosmetologa.webp"
+                alt="Clienta de La Maison Estética tras su tratamiento"
+                fill
+                priority
+                sizes="(min-width: 1024px) 42vw, 100vw"
+                className="object-cover object-top"
+              />
+              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(42,35,32,0.72))]" />
+              <div className="absolute inset-x-4 bottom-4 rounded-[1.2rem] border border-white/20 bg-white/10 p-5 backdrop-blur-sm">
+                <p className="font-display text-2xl leading-tight text-white">
+                  {hero.imageCaption.title}
                 </p>
-                <p className="mt-4 font-display text-4xl leading-none">
-                  Una propuesta más deseable, directa y fácil de reservar.
+                <p className="mt-2 text-sm leading-6 text-white/85">
+                  {hero.imageCaption.description}
                 </p>
-                <p className="mt-4 text-sm leading-6 text-white/80">
-                  Dirección visible, horarios claros y un canal principal que no
-                  te hace perder tiempo.
-                </p>
+                <TrackedLink
+                  href={siteConfig.whatsappUrl}
+                  eventName="whatsapp_click"
+                  eventPayload={{ placement: "hero_image_caption" }}
+                  className="mt-4 inline-flex text-xs font-semibold uppercase tracking-[0.2em] text-white hover:text-brand-soft"
+                >
+                  Conocer más →
+                </TrackedLink>
               </div>
             </div>
           </div>

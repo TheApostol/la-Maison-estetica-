@@ -55,6 +55,16 @@
 - [x] Add conversion event hooks.
 - [x] Confirm map implementation or use safe address search fallback.
 
+## Phase 6 — Design refinements (owner feedback)
+
+- [x] New hero phrase "Belleza que se siente, resultados que se notan." with softer, warmer rose palette.
+- [x] Add owner-approved stats (7800+, 100%, 15+) and credentials (Dermocosmiatra UBA, etc.).
+- [x] Fix repeated/broken images: portrait in hero, 3 unique treatment photos, removed duplicate and broken asset files.
+- [x] Reduce vertical spacing between sections and remove redundant owner section.
+- [x] De-box small-content sections (categories, credibility, location) into lighter section titles.
+- [x] Replace internal redesign-note copy across home and supporting pages with customer-facing copy.
+- [ ] Owner to supply additional professional photography (only 3 real treatment photos available; featured grid limited to 3).
+
 ## Phase 5 — QA and launch
 
 - [ ] Validate content with owner against `docs/CONTENT_GAPS.md`.

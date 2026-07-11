@@ -24,12 +24,11 @@ export default function TreatmentsPage() {
         <div className="max-w-3xl">
           <span className="eyebrow">Tratamientos</span>
           <h1 className="display-title mt-6 text-balance">
-            Un índice más claro para entender la oferta pública actual.
+            Todos nuestros tratamientos, ordenados con claridad.
           </h1>
           <p className="prose-copy mt-6">
-            Solo incluimos nombres y categorías visibles en el sitio auditado. Los
-            detalles clínicos ampliados quedan limitados a los tratamientos con
-            información suficiente para no inventar nada.
+            Estética facial y corporal en Palermo Soho. Explorá las categorías y
+            reservá por WhatsApp el tratamiento que mejor se adapte a tu objetivo.
           </p>
         </div>
 
@@ -103,11 +102,12 @@ export default function TreatmentsPage() {
         </section>
 
         <section className="mt-16 card-surface p-6 sm:p-8">
-          <h2 className="font-display text-4xl leading-none">Qué quedó fuera</h2>
+          <h2 className="font-display text-4xl leading-none">
+            ¿No sabés por dónde empezar?
+          </h2>
           <p className="mt-4 max-w-3xl text-base leading-7 text-muted-foreground">
-            Esta versión no publica testimonios demo, contadores inconsistentes,
-            resultados ilustrativos ni claims profesionales que todavía requieran
-            validación adicional.
+            Contanos tu objetivo y te ayudamos a elegir el tratamiento y el plan
+            de sesiones que mejor se adapten a vos.
           </p>
           <TrackedLink
             href={siteConfig.whatsappUrl}

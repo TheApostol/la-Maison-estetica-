@@ -6,7 +6,6 @@ import { FaqSection } from "@/components/sections/faq-section";
 import { FinalCtaSection } from "@/components/sections/final-cta-section";
 import { HeroSection } from "@/components/sections/hero-section";
 import { LocationSection } from "@/components/sections/location-section";
-import { OwnerSection } from "@/components/sections/owner-section";
 import { ProcessSection } from "@/components/sections/process-section";
 import { StorySection } from "@/components/sections/story-section";
 import { TreatmentCategoriesSection } from "@/components/sections/treatment-categories-section";
@@ -32,7 +31,6 @@ export default function Home() {
         <ProcessSection />
         <FaqSection />
         <LocationSection />
-        <OwnerSection />
         <FinalCtaSection />
       </main>
       <SiteFooter />

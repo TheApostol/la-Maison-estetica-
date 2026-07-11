@@ -8,37 +8,40 @@ export function TreatmentCategoriesSection() {
         <div className="max-w-2xl">
           <span className="eyebrow">Categorías</span>
           <h2 className="section-title mt-5 text-balance">
-            La oferta pública reorganizada para que se entienda de un vistazo.
+            Toda la oferta, ordenada de un vistazo.
           </h2>
         </div>
 
-        <div className="mt-10 grid gap-5 lg:grid-cols-2">
+        <div className="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2">
           {treatmentCategories.map((category) => (
-            <article key={category.name} className="card-surface p-6 sm:p-8">
-              <p className="inline-flex rounded-full bg-brand-soft px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+            <div
+              key={category.name}
+              className="border-t border-border pt-5"
+            >
+              <h3 className="font-display text-2xl leading-none text-foreground">
                 {category.name}
-              </p>
-              <p className="mt-4 text-base leading-7 text-muted-foreground">
+              </h3>
+              <p className="mt-3 text-sm leading-6 text-muted-foreground">
                 {category.summary}
               </p>
-              <ul className="mt-6 flex flex-wrap gap-2">
+              <ul className="mt-4 flex flex-wrap gap-2">
                 {category.items.map((item) => (
                   <li
                     key={item}
-                    className="rounded-full border border-brand/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.9),rgba(246,213,231,0.24))] px-4 py-2 text-sm text-foreground"
+                    className="rounded-full border border-border/80 bg-white/60 px-3 py-1.5 text-xs text-foreground"
                   >
                     {item}
                   </li>
                 ))}
               </ul>
-            </article>
+            </div>
           ))}
         </div>
 
-        <div className="mt-8">
+        <div className="mt-10">
           <Link
             href="/tratamientos"
-            className="inline-flex rounded-full border border-brand/15 bg-white px-5 py-3 font-semibold text-foreground hover:border-brand hover:text-brand"
+            className="inline-flex rounded-full border border-brand/20 bg-white px-5 py-3 font-semibold text-foreground hover:border-brand hover:text-brand"
           >
             Ver índice completo
           </Link>

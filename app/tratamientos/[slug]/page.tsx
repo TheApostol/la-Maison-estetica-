@@ -45,7 +45,7 @@ export default async function TreatmentDetailPage({ params }: PageProps) {
 
         <div className="mt-10 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
           <section className="card-surface p-6 sm:p-8">
-            <h2 className="font-display text-4xl leading-none">Lo visible hoy</h2>
+            <h2 className="font-display text-4xl leading-none">Qué incluye</h2>
             <ul className="mt-6 space-y-3 text-base text-muted-foreground">
               {treatment.highlights.map((item) => (
                 <li key={item} className="flex items-start gap-3">
@@ -57,11 +57,11 @@ export default async function TreatmentDetailPage({ params }: PageProps) {
           </section>
 
           <section className="card-surface p-6 sm:p-8">
-            <h2 className="font-display text-4xl leading-none">Cómo trabajamos este contenido</h2>
+            <h2 className="font-display text-4xl leading-none">Reservá tu turno</h2>
             <p className="mt-4 text-base leading-7 text-muted-foreground">
-              Esta ficha usa únicamente material visible en el sitio público
-              auditado. No suma tiempos, precios, marcas de aparatología ni
-              resultados esperados que no estén confirmados.
+              La cantidad de sesiones y el plan se definen en una evaluación
+              personalizada. Escribinos por WhatsApp y coordinamos todo en
+              minutos.
             </p>
             <TrackedLink
               href={treatment.ctaHref}

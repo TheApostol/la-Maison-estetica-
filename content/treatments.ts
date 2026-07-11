@@ -19,18 +19,18 @@ export const featuredTreatments: Treatment[] = [
     slug: "liporganic",
     name: "Liporganic",
     category: "Corporal modelador",
-    label: "Promo pública observada en el sitio actual",
+    label: "Modelado corporal",
     summary:
-      "Tratamiento presentado como modelador y reductor, con foco en una propuesta corporal de alta demanda dentro del sitio auditado.",
+      "Nuestro tratamiento corporal más pedido: modela, reduce y trabaja la silueta combinando varias técnicas en una misma sesión.",
     highlights: [
       "Lipocavitación",
-      "Madero terapia",
+      "Maderoterapia",
       "Electrodos",
-      "Lipolaser",
+      "Lipoláser",
     ],
     image: {
       src: "/images/treatments/liporganic.webp",
-      alt: "Tratamiento Liporganic de La Maison",
+      alt: "Sesión de tratamiento corporal Liporganic en La Maison",
     },
     ctaHref: `${whatsapp}?text=%C2%A1Hola%20La%20Maison!%20Quiero%20un%20turno%20para%20Liporganic.%20%C2%BFTienen%20disponibilidad%3F`,
   },
@@ -40,7 +40,7 @@ export const featuredTreatments: Treatment[] = [
     category: "Corporal modelador",
     label: "Pack de sesiones",
     summary:
-      "La página pública la presenta como una opción para reducir adiposidad localizada y ordenar mejor el trabajo sobre silueta.",
+      "Ultrasonido focalizado para reducir adiposidad localizada y definir mejor la silueta, en un trabajo progresivo por sesiones.",
     highlights: [
       "Ultrasonido focalizado",
       "Reduce adiposidad localizada",
@@ -58,7 +58,7 @@ export const featuredTreatments: Treatment[] = [
     category: "Corporal modelador",
     label: "Pack de sesiones",
     summary:
-      "El sitio la describe como tecnología 4 en 1, asociada a reducción, reafirmación y trabajo sobre celulitis.",
+      "Tecnología 4 en 1 orientada a reducir, reafirmar y trabajar sobre la celulitis con una experiencia cómoda y acompañada.",
     highlights: [
       "Tecnología 4 en 1",
       "Reduce y reafirma",
@@ -70,31 +70,13 @@ export const featuredTreatments: Treatment[] = [
     },
     ctaHref: `${whatsapp}?text=%C2%A1Hola%20La%20Maison!%20Quiero%20un%20turno%20para%20VelaSlim%20Plus.%20%C2%BFTienen%20disponibilidad%3F`,
   },
-  {
-    slug: "ondas-rusas",
-    name: "Ondas Rusas",
-    category: "Corporal modelador",
-    label: "Pack de sesiones",
-    summary:
-      "La descripción pública se enfoca en tonificación y fortalecimiento de la musculatura, con una lectura más clara y menos recargada.",
-    highlights: [
-      "Gimnasia pasiva",
-      "Tonificación muscular",
-      "Trabajo progresivo por sesiones",
-    ],
-    image: {
-      src: "/images/treatments/velaslim.webp",
-      alt: "Espacio de tratamiento corporal en La Maison",
-    },
-    ctaHref: `${whatsapp}?text=%C2%A1Hola%20La%20Maison!%20Quiero%20un%20turno%20para%20Ondas%20Rusas.%20%C2%BFTienen%20disponibilidad%3F`,
-  },
 ] as const;
 
 export const treatmentCategories = [
   {
     name: "Corporal modelador",
     summary:
-      "Agrupa la oferta corporal más visible del sitio actual, con tratamientos presentados para modelar, reducir o acompañar procesos de tonificación.",
+      "Tratamientos para modelar, reducir y acompañar procesos de tonificación corporal.",
     items: [
       "Liporganic",
       "Ultracavitación (Cavix)",
@@ -106,7 +88,7 @@ export const treatmentCategories = [
   {
     name: "Facial antiage",
     summary:
-      "La página pública menciona una línea facial que combina aparatología y procedimientos orientados a firmeza, textura y luminosidad.",
+      "Una línea facial que combina aparatología y procedimientos orientados a firmeza, textura y luminosidad.",
     items: [
       "HIFU 12D MAX",
       "Armonización facial",
@@ -118,13 +100,13 @@ export const treatmentCategories = [
   {
     name: "Anticelulítico & estrías",
     summary:
-      "Sección visible enfocada en textura, celulitis y estrías, con referencias públicas a Endopeel #GlúteosUp.",
+      "Trabajo sobre textura, celulitis y estrías, con propuestas como Endopeel #GlúteosUp.",
     items: ["Anticelulítico", "Estrías", "Endopeel · #GlúteosUp"],
   },
   {
     name: "Belleza y apoyo estético",
     summary:
-      "Incluye depilación, micropigmentación, maquillaje profesional y asesoramiento de imagen.",
+      "Depilación, micropigmentación, maquillaje profesional y asesoramiento de imagen.",
     items: [
       "Polaser / fotodepilación",
       "Micropigmentación de labios",

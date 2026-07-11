@@ -1,26 +1,44 @@
-import { valuePillars } from "@/content/site";
-import { TrackedLink } from "@/components/ui/tracked-link";
+import { credibility } from "@/content/site";
 
 export function ValueStripSection() {
   return (
-    <section className="section-shell -mt-2 pb-10 sm:-mt-6 sm:pb-16">
-      <div className="card-surface grid gap-4 p-6 sm:grid-cols-2 lg:grid-cols-4 lg:p-8">
-        {valuePillars.map((pillar) => (
-          <TrackedLink
-            key={pillar.title}
-            href={pillar.href}
-            eventName={pillar.eventName}
-            eventPayload={pillar.eventPayload}
-            className="rounded-[1.35rem] border border-brand/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.88),rgba(246,213,231,0.22))] px-5 py-5 transition duration-300 hover:-translate-y-1 hover:border-brand/30 hover:bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(246,213,231,0.38))]"
-          >
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
-              {pillar.title}
-            </p>
-            <p className="mt-3 text-sm leading-6 text-muted-foreground">
-              {pillar.description}
-            </p>
-          </TrackedLink>
-        ))}
+    <section className="section-shell pb-4 pt-2 sm:pb-8">
+      <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+        <div>
+          <span className="section-eyebrow">{credibility.eyebrow}</span>
+          <h2 className="section-title-plain mt-4 text-balance">
+            {credibility.titleLead}{" "}
+            <em className="italic text-brand">{credibility.titleEmphasis}</em>
+          </h2>
+          <p className="mt-4 max-w-md text-base leading-7 text-muted-foreground">
+            {credibility.description}
+          </p>
+        </div>
+
+        <ul className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
+          {credibility.points.map((point) => (
+            <li key={point} className="flex items-center gap-3">
+              <span
+                aria-hidden="true"
+                className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-soft text-brand"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+              </span>
+              <span className="text-sm font-medium text-foreground">{point}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

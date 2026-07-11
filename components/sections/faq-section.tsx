@@ -12,9 +12,8 @@ export function FaqSection() {
             Respuestas claras para bajar fricción antes de reservar.
           </h2>
           <p className="prose-copy mt-4">
-            Reescribimos las preguntas visibles del sitio actual en un formato más
-            cómodo de leer. La respuesta clínica específica sigue reservada para la
-            evaluación personalizada.
+            Resolvemos las dudas más habituales antes de reservar. Si te queda
+            algo por consultar, escribinos por WhatsApp y te respondemos.
           </p>
           <TrackedLink
             href={siteConfig.whatsappFaqUrl}

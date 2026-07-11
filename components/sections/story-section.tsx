@@ -5,14 +5,13 @@ export function StorySection() {
     <section id="nosotros" className="section-gap pt-6">
       <div className="section-shell">
         <div className="max-w-3xl">
-          <span className="eyebrow">Enfoque</span>
+          <span className="eyebrow">Por qué elegirnos</span>
           <h2 className="section-title mt-5 text-balance">
-            Más fluidez visual, más intención comercial y menos bloques que enfrían la decisión.
+            Estética profesional, cercana y a tu medida.
           </h2>
           <p className="prose-copy mt-5 max-w-2xl">
-            Reordenamos el relato para que la página acompañe mejor el deseo de
-            reservar: primero atrae, después orienta y finalmente empuja a la
-            acción con más claridad.
+            Combinamos tecnología de vanguardia con una atención personalizada
+            para acompañarte en cada paso hacia tu mejor versión.
           </p>
         </div>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">

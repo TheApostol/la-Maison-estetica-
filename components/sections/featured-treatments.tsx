@@ -11,12 +11,11 @@ export function FeaturedTreatments() {
           <div className="max-w-2xl">
             <span className="eyebrow">Tratamientos destacados</span>
             <h2 className="section-title mt-5 text-balance">
-              Una selección clara para empezar a explorar.
+              Tecnología que realza tu belleza natural.
             </h2>
             <p className="prose-copy mt-4">
-              Organizamos la oferta visible del sitio actual en una grilla más
-              legible, con nombres y descripciones verificables y sin promesas
-              exageradas.
+              Una selección de nuestros tratamientos corporales más pedidos, con
+              lo que incluye cada uno y un canal directo para reservar.
             </p>
           </div>
 

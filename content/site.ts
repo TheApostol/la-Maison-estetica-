@@ -23,119 +23,88 @@ export const siteConfig = {
   hours: ["Lunes a Viernes: 10:00 – 20:00", "Sábados: 10:00 – 14:00"],
 } as const;
 
-export const heroActions = [
-  {
-    title: "Estética facial y corporal",
-    description: "Ver tratamientos destacados y categorías",
-    href: "/tratamientos",
-    eventName: "cta_click",
-    eventPayload: { placement: "hero_chip_treatments" },
+export const hero = {
+  eyebrow: "Tratamientos estéticos en Palermo Soho",
+  titleLead: "Belleza que se siente,",
+  titleEmphasis: "resultados que se notan.",
+  description:
+    "Estética facial y corporal en Palermo Soho, con tecnología de vanguardia para realzar tu mejor versión.",
+  treatments: [
+    "HIFU 12D",
+    "Liporganic",
+    "Plasma",
+    "Dermapen",
+    "Radiofrecuencia",
+    "Limpiezas faciales",
+  ],
+  imageCaption: {
+    title: "Tu mejor versión empieza hoy.",
+    description: "Agendá tu valoración personalizada por WhatsApp.",
   },
-  {
-    title: "Palermo Soho, CABA",
-    description: "Abrir ubicación y datos de contacto",
-    href: "https://www.google.com/maps/search/?api=1&query=Gurruchaga+1341+Palermo+Soho+CABA",
-    eventName: "map_click",
-    eventPayload: { placement: "hero_chip_map" },
-  },
-  {
-    title: "Turnos por WhatsApp",
-    description: "Escribir ahora y coordinar en minutos",
-    href: whatsappBase,
-    eventName: "whatsapp_click",
-    eventPayload: { placement: "hero_chip_whatsapp" },
-  },
+} as const;
+
+export const heroStats = [
+  { value: "7800+", label: "Clientas felices" },
+  { value: "100%", label: "Turnos por WhatsApp" },
+  { value: "15+", label: "Años de experiencia" },
 ] as const;
 
-export const valuePillars = [
-  {
-    title: "Reserva simple",
-    description:
-      "Un camino directo a WhatsApp, sin formularios eternos ni pasos innecesarios.",
-    href: whatsappBase,
-    eventName: "whatsapp_click",
-    eventPayload: { placement: "value_strip_whatsapp" },
-  },
-  {
-    title: "Ubicación clara",
-    description:
-      "Dirección, horarios y barrio visibles desde el primer scroll.",
-    href: "https://www.google.com/maps/search/?api=1&query=Gurruchaga+1341+Palermo+Soho+CABA",
-    eventName: "map_click",
-    eventPayload: { placement: "value_strip_map" },
-  },
-  {
-    title: "Selección guiada",
-    description:
-      "Tratamientos ordenados para entender rápido qué puede interesarte.",
-    href: "/tratamientos",
-    eventName: "cta_click",
-    eventPayload: { placement: "value_strip_treatments" },
-  },
-  {
-    title: "Atención cercana",
-    description:
-      "Una experiencia pensada para resolver dudas y acompañar la reserva con claridad.",
-    href: whatsappBase,
-    eventName: "whatsapp_click",
-    eventPayload: { placement: "value_strip_owner" },
-  },
-] as const;
+export const credibility = {
+  eyebrow: "Tratamientos estéticos",
+  titleLead: "Belleza real,",
+  titleEmphasis: "resultados reales.",
+  description: "Estética facial y corporal en Palermo Soho.",
+  points: [
+    "15 años de experiencia",
+    "Dermocosmiatra UBA",
+    "Asesoramiento de imagen",
+    "Tecnología de última generación",
+    "Planes personalizados",
+  ],
+} as const;
 
 export const storyPoints = [
   {
-    title: "Más deseo, menos fricción",
+    title: "Atención personalizada",
     description:
-      "La página ahora empuja mejor hacia la consulta, con mensajes más cortos, CTAs más visibles y menos bloques compitiendo entre sí.",
+      "Cada plan se piensa a partir de tu objetivo y de una evaluación inicial, sin fórmulas genéricas.",
   },
   {
-    title: "Servicios mejor presentados",
+    title: "Tecnología de vanguardia",
     description:
-      "Lo facial, corporal y complementario queda agrupado con más intención comercial y lectura más rápida.",
+      "Aparatología de última generación para acompañar tratamientos faciales y corporales.",
   },
   {
-    title: "Ubicación que convierte",
+    title: "Foco facial y corporal",
     description:
-      "La ubicación deja de sentirse como un bloque aparte y pasa a ser parte natural del recorrido de contacto.",
+      "Una oferta ordenada entre lo facial, lo corporal y la belleza complementaria, fácil de recorrer.",
   },
   {
-    title: "Contenido más confiable",
+    title: "Palermo Soho",
     description:
-      "Se mantienen solo señales públicas verificables y se elimina lo que distraía o restaba credibilidad.",
+      "Un espacio cálido y cercano en Gurruchaga 1341, con coordinación simple por WhatsApp.",
   },
 ] as const;
-
-export const ownerSection = {
-  eyebrow: "Atención cercana",
-  title: "Un cierre más humano para reforzar confianza antes de escribir.",
-  description:
-    "En lugar de usar la imagen principal al comienzo, la movimos al final para que funcione como respaldo de cercanía y atención directa en el momento de decidir la consulta.",
-  points: [
-    "Atención personalizada desde el primer mensaje.",
-    "Seguimiento directo durante la coordinación del turno.",
-    "Una presencia más cálida al final del recorrido comercial.",
-  ],
-} as const;
 
 export const processSteps = [
   {
     title: "Consulta",
     description:
-      "El primer contacto se resuelve por WhatsApp, con una vía más directa y visible desde cualquier sección.",
+      "Escribinos por WhatsApp y coordinamos el primer contacto en minutos.",
   },
   {
     title: "Evaluación",
     description:
-      "La propuesta se apoya en la evaluación inicial y en una lectura personalizada del objetivo de cada persona.",
+      "Analizamos tu objetivo con una lectura personalizada de piel y cuerpo.",
   },
   {
-    title: "Propuesta",
+    title: "Plan a medida",
     description:
-      "El sitio público habla de planes y combinaciones de tratamientos. El rediseño traduce eso a un paso claro y fácil de entender.",
+      "Definimos los tratamientos y la cantidad de sesiones que mejor se adaptan a vos.",
   },
   {
     title: "Seguimiento",
     description:
-      "La narrativa finaliza con continuidad y acompañamiento, sin prometer resultados que no puedan verificarse.",
+      "Acompañamos cada sesión para cuidar la experiencia y sostener los resultados.",
   },
 ] as const;

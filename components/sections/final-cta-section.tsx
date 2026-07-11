@@ -9,11 +9,11 @@ export function FinalCtaSection() {
           <div className="mx-auto max-w-3xl text-center">
             <span className="eyebrow">Último paso</span>
             <h2 className="section-title mt-5 text-balance">
-              Tu próximo turno puede empezar con un mensaje simple.
+              Tu mejor versión empieza con un mensaje.
             </h2>
             <p className="prose-copy mt-4">
-              Mantenemos la reserva por WhatsApp como acción principal porque es el
-              canal público verificado y el más directo para esta etapa.
+              Reservá tu valoración personalizada por WhatsApp y coordinamos el
+              turno que mejor se adapte a vos.
             </p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <TrackedLink

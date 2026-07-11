@@ -1,21 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f7f4ef;
-  --surface: #efe9e2;
-  --surface-strong: #e3dad0;
-  --foreground: #24211f;
-  --muted-foreground: #665f59;
-  --border: #d8cec3;
+  --background: #faf6f1;
+  --surface: #f1ebe4;
+  --surface-strong: #e6ddd3;
+  --foreground: #2a2320;
+  --muted-foreground: #6b625b;
+  --border: #e0d6ca;
   --white: #ffffff;
-  --brand: #c1177a;
-  --brand-hover: #9f1365;
-  --brand-soft: #f6d5e7;
+  --brand: #a83466;
+  --brand-hover: #8c2753;
+  --brand-soft: #f3dce6;
+  --rose: #c67593;
   --taupe: #917c70;
-  --brass: #a98a5c;
+  --brass: #b0925f;
   --wa: #25d366;
   --wa-hover: #1fa255;
-  --shadow-soft: 0 20px 60px -36px rgba(36, 33, 31, 0.38);
+  --shadow-soft: 0 20px 60px -40px rgba(42, 35, 32, 0.32);
   --shadow-line: inset 0 1px 0 rgba(255, 255, 255, 0.72);
   --radius-xl: 1.75rem;
 }
@@ -30,6 +31,7 @@
   --color-brand: var(--brand);
   --color-brand-hover: var(--brand-hover);
   --color-brand-soft: var(--brand-soft);
+  --color-rose: var(--rose);
   --color-taupe: var(--taupe);
   --color-brass: var(--brass);
   --color-wa: var(--wa);
@@ -47,9 +49,9 @@
 
 html {
   background:
-    radial-gradient(circle at top left, rgba(193, 23, 122, 0.14), transparent 28%),
-    radial-gradient(circle at top right, rgba(193, 23, 122, 0.08), transparent 24%),
-    linear-gradient(180deg, #fbf8f3 0%, var(--background) 32%, #f2ece5 100%);
+    radial-gradient(circle at top left, rgba(168, 52, 102, 0.06), transparent 30%),
+    radial-gradient(circle at top right, rgba(168, 52, 102, 0.04), transparent 26%),
+    linear-gradient(180deg, #fdfaf6 0%, var(--background) 34%, #f4efe8 100%);
 }
 
 body {
@@ -91,7 +93,7 @@ textarea {
 }
 
 .section-gap {
-  @apply py-16 sm:py-20 lg:py-28;
+  @apply py-12 sm:py-14 lg:py-20;
 }
 
 .eyebrow {
@@ -114,11 +116,19 @@ textarea {
 
 .editorial-grid {
   background-image:
-    linear-gradient(rgba(36, 33, 31, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(36, 33, 31, 0.04) 1px, transparent 1px),
-    radial-gradient(circle at 12% 22%, rgba(193, 23, 122, 0.12), transparent 16%);
+    linear-gradient(rgba(42, 35, 32, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(42, 35, 32, 0.03) 1px, transparent 1px),
+    radial-gradient(circle at 12% 18%, rgba(198, 117, 147, 0.1), transparent 20%);
   background-position: center;
-  background-size: 72px 72px;
+  background-size: 80px 80px;
+}
+
+.section-title-plain {
+  @apply font-display text-3xl leading-tight tracking-[-0.02em] text-foreground sm:text-4xl;
+}
+
+.section-eyebrow {
+  @apply text-xs font-semibold uppercase tracking-[0.22em] text-brand;
 }
 
 .prose-copy {

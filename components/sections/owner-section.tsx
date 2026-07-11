@@ -7,7 +7,7 @@ export function OwnerSection() {
     <section className="section-gap pt-0">
       <div className="section-shell">
         <div className="card-surface overflow-hidden lg:grid lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="relative min-h-80 bg-surface">
+          <div className="relative min-h-80 bg-[radial-gradient(circle_at_top_left,rgba(193,23,122,0.16),transparent_34%),linear-gradient(145deg,rgba(255,255,255,0.96),rgba(246,213,231,0.3))]">
             <Image
               src="/images/team/cosmetologa.webp"
               alt="Imagen de presentación de La Maison"

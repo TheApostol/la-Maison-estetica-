@@ -8,9 +8,9 @@
   --muted-foreground: #665f59;
   --border: #d8cec3;
   --white: #ffffff;
-  --brand: #76565a;
-  --brand-hover: #62464a;
-  --brand-soft: #e7dadc;
+  --brand: #c1177a;
+  --brand-hover: #9f1365;
+  --brand-soft: #f6d5e7;
   --taupe: #917c70;
   --brass: #a98a5c;
   --wa: #25d366;
@@ -47,7 +47,8 @@
 
 html {
   background:
-    radial-gradient(circle at top left, rgba(169, 138, 92, 0.12), transparent 28%),
+    radial-gradient(circle at top left, rgba(193, 23, 122, 0.14), transparent 28%),
+    radial-gradient(circle at top right, rgba(193, 23, 122, 0.08), transparent 24%),
     linear-gradient(180deg, #fbf8f3 0%, var(--background) 32%, #f2ece5 100%);
 }
 
@@ -114,7 +115,8 @@ textarea {
 .editorial-grid {
   background-image:
     linear-gradient(rgba(36, 33, 31, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(36, 33, 31, 0.04) 1px, transparent 1px);
+    linear-gradient(90deg, rgba(36, 33, 31, 0.04) 1px, transparent 1px),
+    radial-gradient(circle at 12% 22%, rgba(193, 23, 122, 0.12), transparent 16%);
   background-position: center;
   background-size: 72px 72px;
 }

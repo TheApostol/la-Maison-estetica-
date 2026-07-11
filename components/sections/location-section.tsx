@@ -6,9 +6,9 @@ export function LocationSection() {
     <section id="contacto" className="section-gap">
       <div className="section-shell grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="card-surface overflow-hidden">
-          <div className="relative aspect-[4/3] overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(169,138,92,0.22),transparent_32%),linear-gradient(145deg,rgba(255,255,255,0.94),rgba(231,218,220,0.7))]">
-            <div className="absolute inset-6 rounded-[1.5rem] border border-border/70" />
-            <div className="absolute bottom-6 left-6 right-6 rounded-[1.5rem] border border-white/80 bg-white/70 p-5 shadow-[var(--shadow-soft)]">
+          <div className="relative aspect-[4/3] overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(193,23,122,0.18),transparent_30%),linear-gradient(145deg,rgba(255,255,255,0.96),rgba(246,213,231,0.72))]">
+            <div className="absolute inset-6 rounded-[1.5rem] border border-brand/15" />
+            <div className="absolute bottom-6 left-6 right-6 rounded-[1.5rem] border border-white/80 bg-[linear-gradient(145deg,rgba(255,255,255,0.78),rgba(246,213,231,0.82))] p-5 shadow-[var(--shadow-soft)]">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Palermo Soho
               </p>
@@ -50,9 +50,9 @@ export function LocationSection() {
               href={siteConfig.whatsappUrl}
               eventName="whatsapp_click"
               eventPayload={{ placement: "location_primary" }}
-              className="card-surface p-6 hover:-translate-y-1 hover:border-wa/40"
+              className="card-surface border-brand/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.9),rgba(246,213,231,0.26))] p-6 hover:-translate-y-1 hover:border-brand/30"
             >
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+              <p className="inline-flex rounded-full bg-brand-soft px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Hablar por WhatsApp
               </p>
               <p className="mt-3 text-2xl font-semibold text-foreground">
@@ -66,9 +66,9 @@ export function LocationSection() {
               href={siteConfig.mapUrl}
               eventName="map_click"
               eventPayload={{ placement: "location_map" }}
-              className="card-surface p-6 hover:-translate-y-1 hover:border-brand/40"
+              className="card-surface border-brand/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.9),rgba(246,213,231,0.2))] p-6 hover:-translate-y-1 hover:border-brand/30"
             >
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+              <p className="inline-flex rounded-full bg-brand-soft px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Palermo Soho, CABA
               </p>
               <p className="mt-3 text-2xl font-semibold text-foreground">
@@ -82,9 +82,9 @@ export function LocationSection() {
               href={siteConfig.instagramUrl}
               eventName="instagram_click"
               eventPayload={{ placement: "location_instagram" }}
-              className="card-surface p-6 hover:-translate-y-1 hover:border-brand/40"
+              className="card-surface border-brand/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.9),rgba(246,213,231,0.2))] p-6 hover:-translate-y-1 hover:border-brand/30"
             >
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+              <p className="inline-flex rounded-full bg-brand-soft px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Instagram
               </p>
               <p className="mt-3 text-2xl font-semibold text-foreground">
@@ -95,7 +95,7 @@ export function LocationSection() {
               </p>
             </TrackedLink>
             <div className="card-surface p-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+              <p className="inline-flex rounded-full bg-brand-soft px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Horarios
               </p>
               <p className="mt-3 text-base leading-7 text-muted-foreground">
@@ -106,7 +106,7 @@ export function LocationSection() {
             </div>
           </div>
 
-          <div className="card-surface p-6 sm:p-8">
+          <div className="card-surface border-brand/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(246,213,231,0.28))] p-6 sm:p-8">
             <p className="text-sm font-medium uppercase tracking-[0.18em] text-brand">
               Próximo paso
             </p>
@@ -119,7 +119,7 @@ export function LocationSection() {
               href={siteConfig.whatsappUrl}
               eventName="whatsapp_click"
               eventPayload={{ placement: "contact_placeholder" }}
-              className="mt-6 inline-flex rounded-full bg-wa px-5 py-3 font-semibold text-white hover:bg-wa-hover"
+              className="mt-6 inline-flex rounded-full bg-brand px-5 py-3 font-semibold text-white shadow-[0_16px_28px_-18px_rgba(193,23,122,0.75)] hover:bg-brand-hover"
             >
               Ir a WhatsApp
             </TrackedLink>

@@ -6,7 +6,7 @@ import { BrandMark } from "@/components/ui/brand-mark";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-border/70 bg-[#f3ede6]">
+    <footer className="border-t border-brand/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.88),rgba(246,213,231,0.3))]">
       <div className="section-shell grid gap-10 py-12 lg:grid-cols-[1.3fr_0.8fr_1fr]">
         <div className="max-w-md">
           <BrandMark compact />
@@ -65,14 +65,14 @@ export function SiteFooter() {
             {siteConfig.hours[1]}
           </p>
           <div className="mt-5 flex flex-wrap gap-4 text-sm">
-            <TrackedLink
-              href={siteConfig.whatsappUrl}
-              eventName="whatsapp_click"
-              eventPayload={{ placement: "footer" }}
-              className="font-semibold text-foreground hover:text-brand"
-            >
-              WhatsApp
-            </TrackedLink>
+              <TrackedLink
+                href={siteConfig.whatsappUrl}
+                eventName="whatsapp_click"
+                eventPayload={{ placement: "footer" }}
+                className="font-semibold text-foreground hover:text-brand"
+              >
+                WhatsApp
+              </TrackedLink>
             <TrackedLink
               href={siteConfig.instagramUrl}
               eventName="instagram_click"

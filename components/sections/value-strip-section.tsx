@@ -11,7 +11,7 @@ export function ValueStripSection() {
             href={pillar.href}
             eventName={pillar.eventName}
             eventPayload={pillar.eventPayload}
-            className="rounded-[1.35rem] bg-background px-5 py-5 hover:-translate-y-1 hover:bg-white"
+            className="rounded-[1.35rem] border border-brand/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.88),rgba(246,213,231,0.22))] px-5 py-5 transition duration-300 hover:-translate-y-1 hover:border-brand/30 hover:bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(246,213,231,0.38))]"
           >
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
               {pillar.title}

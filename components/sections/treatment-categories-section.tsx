@@ -15,7 +15,7 @@ export function TreatmentCategoriesSection() {
         <div className="mt-10 grid gap-5 lg:grid-cols-2">
           {treatmentCategories.map((category) => (
             <article key={category.name} className="card-surface p-6 sm:p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+              <p className="inline-flex rounded-full bg-brand-soft px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 {category.name}
               </p>
               <p className="mt-4 text-base leading-7 text-muted-foreground">
@@ -25,7 +25,7 @@ export function TreatmentCategoriesSection() {
                 {category.items.map((item) => (
                   <li
                     key={item}
-                    className="rounded-full border border-border bg-background px-4 py-2 text-sm text-foreground"
+                    className="rounded-full border border-brand/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.9),rgba(246,213,231,0.24))] px-4 py-2 text-sm text-foreground"
                   >
                     {item}
                   </li>
@@ -38,7 +38,7 @@ export function TreatmentCategoriesSection() {
         <div className="mt-8">
           <Link
             href="/tratamientos"
-            className="inline-flex rounded-full border border-border bg-white px-5 py-3 font-semibold text-foreground hover:border-brand hover:text-brand"
+            className="inline-flex rounded-full border border-brand/15 bg-white px-5 py-3 font-semibold text-foreground hover:border-brand hover:text-brand"
           >
             Ver índice completo
           </Link>

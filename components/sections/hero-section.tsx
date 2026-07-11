@@ -44,9 +44,9 @@ export function HeroSection() {
                 href={item.href}
                 eventName={item.eventName}
                 eventPayload={item.eventPayload}
-                className="rounded-[1.4rem] border border-border/80 bg-white/75 px-4 py-4 text-left shadow-[var(--shadow-soft)] hover:-translate-y-1 hover:border-brand/50"
+                className="rounded-[1.4rem] border border-brand/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.84),rgba(246,213,231,0.24))] px-4 py-4 text-left shadow-[var(--shadow-soft)] transition duration-300 hover:-translate-y-1 hover:border-brand/40 hover:bg-[linear-gradient(180deg,rgba(255,255,255,0.95),rgba(246,213,231,0.4))]"
               >
-                <p className="text-sm font-semibold text-foreground">{item.title}</p>
+                <p className="text-sm font-semibold text-brand">{item.title}</p>
                 <p className="mt-2 text-xs leading-5 text-muted-foreground">
                   {item.description}
                 </p>
@@ -56,7 +56,8 @@ export function HeroSection() {
         </div>
 
         <div className="relative">
-          <div className="absolute inset-x-[10%] top-[10%] h-40 rounded-full bg-brand-soft/70 blur-3xl sm:h-52" />
+          <div className="absolute inset-x-[10%] top-[10%] h-40 rounded-full bg-[radial-gradient(circle,rgba(193,23,122,0.36),transparent_68%)] blur-3xl sm:h-52" />
+          <div className="absolute -right-8 top-8 h-24 w-24 rounded-full border border-brand/20 bg-brand-soft/50 blur-[1px]" />
           <div className="grid gap-4">
             <div className="card-surface overflow-hidden p-3">
               <div className="relative aspect-[5/4] overflow-hidden rounded-[1.4rem]">
@@ -82,8 +83,8 @@ export function HeroSection() {
                   />
                 </div>
               </div>
-              <div className="rounded-[2rem] border border-border/70 bg-brand px-6 py-6 text-white shadow-[var(--shadow-soft)]">
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/70">
+              <div className="rounded-[2rem] border border-brand/20 bg-[linear-gradient(145deg,#c1177a,#d84c9f)] px-6 py-6 text-white shadow-[0_28px_50px_-28px_rgba(193,23,122,0.95)]">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/80">
                   Palermo Soho
                 </p>
                 <p className="mt-4 font-display text-4xl leading-none">

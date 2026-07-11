@@ -5,7 +5,7 @@ export function FinalCtaSection() {
   return (
     <section className="section-gap pt-0">
       <div className="section-shell">
-        <div className="card-surface overflow-hidden bg-[linear-gradient(135deg,rgba(231,218,220,0.65),rgba(255,255,255,0.92))] px-6 py-10 sm:px-10 sm:py-14">
+        <div className="card-surface overflow-hidden border-brand/10 bg-[linear-gradient(135deg,rgba(246,213,231,0.7),rgba(255,255,255,0.94),rgba(246,213,231,0.45))] px-6 py-10 sm:px-10 sm:py-14">
           <div className="mx-auto max-w-3xl text-center">
             <span className="eyebrow">Último paso</span>
             <h2 className="section-title mt-5 text-balance">
@@ -20,7 +20,7 @@ export function FinalCtaSection() {
                 href={siteConfig.whatsappUrl}
                 eventName="primary_booking_cta"
                 eventPayload={{ placement: "final_cta" }}
-                className="inline-flex justify-center rounded-full bg-brand px-6 py-3.5 font-semibold text-white hover:bg-brand-hover"
+                className="inline-flex justify-center rounded-full bg-brand px-6 py-3.5 font-semibold text-white shadow-[0_18px_32px_-18px_rgba(193,23,122,0.8)] hover:bg-brand-hover"
               >
                 Reservar una evaluación
               </TrackedLink>

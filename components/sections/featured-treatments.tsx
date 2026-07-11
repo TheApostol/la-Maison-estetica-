@@ -43,9 +43,10 @@ export function FeaturedTreatments() {
                   sizes="(min-width: 1024px) 40vw, 100vw"
                   className="object-cover"
                 />
+                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(193,23,122,0.02),rgba(193,23,122,0.14))]" />
               </div>
               <div className="flex flex-col p-6 sm:p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+                <p className="inline-flex w-fit rounded-full bg-brand-soft px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                   {treatment.category}
                 </p>
                 <h3 className="mt-3 font-display text-4xl leading-none tracking-[-0.03em]">
@@ -60,7 +61,7 @@ export function FeaturedTreatments() {
                 <ul className="mt-6 space-y-2 text-sm text-foreground">
                   {treatment.highlights.map((item) => (
                     <li key={item} className="flex items-start gap-3">
-                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-brass" />
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-brand" />
                       <span>{item}</span>
                     </li>
                   ))}

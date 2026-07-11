@@ -37,7 +37,7 @@ export function MobileMenu() {
         aria-controls="mobile-nav-panel"
         aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
         onClick={() => setIsOpen((value) => !value)}
-        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white/85 text-foreground shadow-[var(--shadow-soft)]"
+        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-brand/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(246,213,231,0.4))] text-foreground shadow-[var(--shadow-soft)]"
       >
         <span className="sr-only">{isOpen ? "Cerrar menú" : "Abrir menú"}</span>
         <span className="relative h-4 w-5">
@@ -66,7 +66,7 @@ export function MobileMenu() {
         >
           <div
             id="mobile-nav-panel"
-            className="absolute right-4 top-20 w-[min(22rem,calc(100vw-2rem))] rounded-[2rem] border border-border bg-background p-6 shadow-[var(--shadow-soft)]"
+            className="absolute right-4 top-20 w-[min(22rem,calc(100vw-2rem))] rounded-[2rem] border border-brand/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(246,213,231,0.18))] p-6 shadow-[var(--shadow-soft)]"
             onClick={(event) => event.stopPropagation()}
           >
             <nav aria-label="Navegación móvil" className="space-y-2">
@@ -74,7 +74,7 @@ export function MobileMenu() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="block rounded-2xl px-4 py-3 text-base font-medium text-foreground hover:bg-surface"
+                  className="block rounded-2xl px-4 py-3 text-base font-medium text-foreground hover:bg-brand-soft/70 hover:text-brand"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
@@ -89,7 +89,7 @@ export function MobileMenu() {
                 trackEvent("whatsapp_click", { placement: "mobile_menu" });
                 setIsOpen(false);
               }}
-              className="mt-5 inline-flex w-full items-center justify-center rounded-full bg-wa px-5 py-3 font-semibold text-white hover:bg-wa-hover"
+              className="mt-5 inline-flex w-full items-center justify-center rounded-full bg-brand px-5 py-3 font-semibold text-white shadow-[0_18px_32px_-18px_rgba(193,23,122,0.8)] hover:bg-brand-hover"
             >
               Hablar por WhatsApp
             </a>
